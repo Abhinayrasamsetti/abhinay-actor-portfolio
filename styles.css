@@ -250,31 +250,84 @@
 
 
 /* =========================================
-   MOBILE CONTACT DETAILS
-   ========================================= */
+   CONTACT DETAILS
+========================================= */
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  width: 100%;
+  max-width: 680px;
+
+  margin: 32px auto 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-detail {
+  flex: 1;
+  padding: 18px 28px;
+  text-align: center;
+}
+
+.contact-detail + .contact-detail {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  color: #b85b58;
+}
+
+.contact-value {
+  display: block;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 0.01em;
+
+  color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 600px) {
 
   .contact-details {
     flex-direction: column;
-
     width: 90%;
   }
 
   .contact-detail {
-    padding: 18px 20px;
-
-    text-align: center;
+    padding: 16px 12px;
   }
 
   .contact-detail + .contact-detail {
     border-left: none;
-
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .contact-detail a {
-    font-size: 13px;
+  .contact-value {
+    font-size: 12px;
   }
 
 }
